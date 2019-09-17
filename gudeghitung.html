@@ -1,0 +1,41 @@
+<html>
+<head><title>Form Pembelian</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="wrapper">
+<header></header>
+<nav>
+				<ul>
+ 				<ul>
+	<li><a href="index.html">Beranda</a></li>
+	<li><a href="tentang.html">About Us</a></li>
+	<li><a href="#">Kontak</a></li>
+	</ul>
+</ul>
+				</nav>
+
+<script language="JavaScript">
+function tulis () {
+var myElement = document.getElementById("harga");
+var pesan = parseFloat(document.fform.pesanan.value);
+var hitung = myElement.innerHTML * pesan;
+document.getElementById("oharga").innerHTML = 
+"Rp. " + hitung;
+}
+</script>
+<div id="utama">
+<div id="atas">
+<h1>Gudeg Jogja</h1>
+<img class="img" src="images/gudeg.jpg" width="290" height="200" >
+<p id="harga">27000</p><br><br>
+<form name="fform">Pesanan : <input type="text" size="11" name="pesanan" onkeyup="tulis()"> <input type="reset" value="Reset"></form>
+<br>Harga : 
+<p id="oharga"></p>
+
+</div>
+</div>
+<footer>&copy; 2015 Warung Rasa Bersama (kelompok1) </footer>
+</div>
+</body>
+</html>
